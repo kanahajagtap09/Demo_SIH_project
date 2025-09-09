@@ -77,7 +77,7 @@ export default function Notification() {
         type: "comment",
         createdAt: subDays(new Date(), 5),
         commentPreview: "So professional and elegant ✨",
-        postImage: "https://placekitten.com/240/240",
+       
       },
       {
         id: "6",
@@ -170,13 +170,7 @@ export default function Notification() {
 
                     {/* Right side: image / button */}
                     <div>
-                      {["like", "comment"].includes(n.type) && n.postImage && (
-                        <img
-                          src={n.postImage}
-                          alt="post thumbnail"
-                          className="w-11 h-11 object-cover rounded-md"
-                        />
-                      )}
+                      
 
                       {n.type === "follow" && (
                         <button className="bg-blue-500 text-white text-xs px-4 py-1 rounded font-medium hover:bg-blue-600 transition">
